@@ -159,7 +159,7 @@ nav {
 }
 
 @media screen and (min-width:992px) {
-    .fa-bars {
+    .right i {
         display: none;
     }
 
