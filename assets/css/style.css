@@ -65,12 +65,12 @@
     color: var(--respo-dark);
 }
 
-.small {
+.card_small {
     flex-direction: column;
     text-align: center;
 }
 
-.small i {
+.card_small i {
     font-size: 5rem;
     color: var(--respo-secondary);
     margin-bottom: 2rem;
