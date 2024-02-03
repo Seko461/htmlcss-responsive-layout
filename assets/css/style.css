@@ -33,7 +33,7 @@
     flex-wrap: wrap;
     padding: 1rem;
     margin: 0 -1.5rem;
-    border: 1px solid red;
+
 }
 
 .col-12 {
@@ -42,7 +42,7 @@
 
 
 .card {
-    border: 2px solid green;
+
     margin: .5rem;
     background-color: var(--respo-secondary-lighter);
     border-radius: 20px;
@@ -63,6 +63,7 @@
     margin-bottom: 2rem;
     font-size: 1rem;
     color: var(--respo-dark);
+    padding-bottom: 2rem;
 }
 
 .card_small {
@@ -106,19 +107,12 @@ nav {
 
 /* #region demo */
 #demo {
-    padding-top: 2rem;
-}
-
-.part_a,
-.part_b {
-    border: 1px dashed black;
-    /* height: 50%; */
+    padding: 2rem 0;
 }
 
 .part_a {
     padding-bottom: 2rem;
 }
-
 
 .part_a a {
     color: var(--respo-light);
@@ -136,6 +130,71 @@ nav {
 
 
 /* #endregion demo */
+
+
+/* #region planning */
+
+#planning {
+    background-color: var(--respo-primary);
+
+    padding: 2rem 1rem;
+}
+
+.planning_a img {
+    width: 100%;
+}
+
+.planning_a h2 {
+    font-size: 2.25rem;
+    color: var(--respo-light);
+    padding-top: 4rem;
+
+}
+
+.planning_a p {
+    color: var(--respo-light);
+    padding-top: 2rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.planning_b .card {
+    background-color: var(--respo-light);
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.planning_b .card img {
+    width: 100%;
+
+}
+
+.planning_b .card h3 {
+    color: var(--respo-dark);
+    padding-top: .5rem;
+    font-weight: bold;
+}
+
+.planning_b .card em {
+    line-height: 1.5rem;
+}
+
+.arrow {
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.arrow a {
+    color: var(--respo-dark);
+    background-color: var(--respo-primary);
+    padding: .5rem .8rem;
+    border-radius: 50%;
+
+}
+
+/* #endregion planning */
 @media screen and (min-width:768px) {
     .col-md-12 {
         width: 100%;
@@ -155,7 +214,11 @@ nav {
         display: flex;
     }
 
-
+    .arrow {
+        transform: scale(1.5);
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -192,6 +255,23 @@ nav {
 
     .part_a {
         padding-bottom: 3rem;
+
+    }
+
+    #planning .col-lg-12 {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .planning_a,
+    .planning_b {
+        width: 50%;
+    }
+
+
+    .planning_b .card {
+        flex-direction: column;
     }
 }
 
