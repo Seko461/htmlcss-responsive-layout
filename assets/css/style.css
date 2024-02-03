@@ -44,6 +44,13 @@
     margin: .5rem;
 }
 
+.part_a,
+.part_b {
+    border: 1px dashed black;
+    /* height: 50%; */
+}
+
+
 /* #region header */
 header {
     background-color: var(--respo-secondary);
@@ -77,14 +84,25 @@ nav {
 
 /* #endregion demo */
 @media screen and (min-width:768px) {
+    .col-md-12 {
+        width: 100%;
+    }
+
     .col-md-8 {
         width: calc((100%/12)*8);
         display: flex;
     }
 
+    .col-md-6 {
+        width: 50%;
+    }
+
     .col-md-4 {
         width: calc((100%/12)*4);
+        display: flex;
     }
+
+
 }
 
 @media screen and (min-width:992px) {
@@ -109,6 +127,14 @@ nav {
         color: var(--respo-dark);
         padding: .5rem 1.5rem;
         border-radius: 30px;
+    }
+
+    .card {
+        display: inline-flex;
+    }
+
+    .col-lg-6 {
+        width: 50%;
     }
 }
 
