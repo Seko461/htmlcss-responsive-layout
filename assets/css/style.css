@@ -49,6 +49,7 @@
     padding-top: 1.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .card h3 {
@@ -63,7 +64,7 @@
     margin-bottom: 2rem;
     font-size: 1rem;
     color: var(--respo-dark);
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
 }
 
 .card_small {
@@ -125,6 +126,11 @@ nav {
 
 .part_b {
     display: flex;
+
+}
+
+.part_b img {
+    transform: translateY(2rem);
 }
 
 
@@ -261,6 +267,53 @@ h4 {
 
 /* #endregion testimonials */
 
+
+/* #region features */
+#features {
+    background-color: var(--respo-primary);
+    padding: 2rem 0;
+}
+
+#features h2 {
+    font-size: 2rem;
+    color: var(--respo-light);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#features .card {
+    text-align: left;
+    background-color: var(--respo-light);
+}
+
+#features h3,
+#features h4 {
+    color: var(--respo-primary);
+
+}
+
+#features h3 {
+    font-size: 2.5rem;
+}
+
+#features h4 {
+    padding-bottom: 1.5rem;
+}
+
+#features a {
+    background-color: var(--respo-primary);
+    color: var(--respo-light);
+    letter-spacing: .25rem;
+    padding: .5rem 2rem;
+    border-radius: 20px;
+    transform: translateY(-3rem);
+}
+
+
+
+/* #endregion features */
+
+
 @media screen and (min-width:768px) {
     .col-md-12 {
         width: 100%;
@@ -273,6 +326,7 @@ h4 {
 
     .col-md-6 {
         width: 50%;
+        justify-content: center;
     }
 
     .col-md-4 {
@@ -329,6 +383,14 @@ h4 {
         display: inline-flex;
     }
 
+    .benefits_card {
+        flex-direction: column;
+    }
+
+    .col-lg-4 {
+        width: calc((100%/12)*4);
+    }
+
     .col-lg-6 {
         width: 50%;
     }
@@ -382,6 +444,7 @@ h4 {
 @media screen and (min-width:1200px) {
     .part_b img {
         padding-top: 3rem;
-        transform: translateX(3rem);
+        transform: translateY(2rem);
+
     }
 }
