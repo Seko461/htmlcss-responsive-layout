@@ -134,6 +134,9 @@ nav {
 
 /* #region planning */
 
+
+
+
 #planning {
     background-color: var(--respo-primary);
 
@@ -195,6 +198,69 @@ nav {
 }
 
 /* #endregion planning */
+
+
+/* #region testimonials */
+#testimonials {
+    text-align: center;
+}
+
+#testimonials .title {
+
+    padding: 3rem 1.5rem;
+}
+
+#testimonials .card {
+    background-color: var(--respo-primary);
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 40px;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+#testimonials h2 {
+    color: var(--respo-primary);
+    padding-top: 2.5rem;
+    font-size: 2rem;
+}
+
+#testimonials p {
+    line-height: 2rem;
+    padding-top: 3rem;
+}
+
+.photo img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-bottom: 1rem;
+}
+
+.comment {
+    line-height: 1.5rem;
+    color: var(--respo-light);
+    padding-bottom: 2rem;
+}
+
+.comment i {
+    font-size: 1.5rem;
+}
+
+.sign {
+    color: var(--respo-light);
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* #endregion testimonials */
+
 @media screen and (min-width:768px) {
     .col-md-12 {
         width: 100%;
@@ -218,6 +284,20 @@ nav {
         transform: scale(1.5);
         margin-top: 4rem;
         margin-bottom: 2rem;
+    }
+
+    #testimonials .card {
+        display: flex;
+
+
+    }
+
+    .testimonials_right {
+
+        text-align: left;
+        padding: 0 2rem;
+        align-items: center;
+        transform: translateY(1.5rem);
     }
 }
 
@@ -270,9 +350,7 @@ nav {
         display: inline-flex;
     }
 
-    #planning .container {
-        /* width: 70%; */
-    }
+
 
     .planning_a,
     .planning_b {
