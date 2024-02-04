@@ -313,6 +313,65 @@ h4 {
 
 /* #endregion features */
 
+/* #region about */
+#about {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+}
+
+#about h3 {
+    font-size: 3rem;
+    color: var(--respo-primary);
+}
+
+.top_p {
+    padding: 2rem 0;
+    line-height: 2rem;
+}
+
+.bottom_p {
+    line-height: 2rem;
+    padding-bottom: 3rem;
+}
+
+.image_about img {
+    border-radius: 50%;
+}
+
+.image_about {
+    display: flex;
+    position: relative;
+}
+
+.image_about i {
+    font-size: 4.5rem;
+    color: var(--respo-primary);
+    transform: translateX(-3.5rem);
+
+}
+
+.about_right h4 {
+    font-size: 2rem;
+    color: var(--respo-primary);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about_right i {
+    margin-right: .2rem;
+}
+
+.about_right a {
+    background-color: var(--respo-primary);
+    color: var(--respo-light);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+
+/* #endregion about */
+
 
 @media screen and (min-width:768px) {
     .col-md-12 {
@@ -352,6 +411,17 @@ h4 {
         padding: 0 2rem;
         align-items: center;
         transform: translateY(1.5rem);
+    }
+
+    #about .col-12 {
+        display: inline-flex;
+    }
+
+    .about_right {
+        transform: scale(.8);
+        padding-left: 4rem;
+        width: 40%;
+
     }
 }
 
