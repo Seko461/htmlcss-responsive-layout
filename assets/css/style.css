@@ -7,7 +7,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'PT Sans', sans-serif;
-    transition: all .5s;
+    transition: all .3s;
 }
 
 :root {
@@ -371,6 +371,58 @@ h4 {
 }
 
 /* #endregion about */
+
+/* #region get started */
+#get_started {
+    background-color: var(--respo-primary);
+    text-align: center;
+    padding-top: 3rem;
+    color: var(--respo-light);
+}
+
+#get_started h4 {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#get_started h2 {
+    font-size: 3.5rem;
+    padding: 2rem 0;
+}
+
+#get_started h1 {
+    font-size: 7rem;
+    color: var(--respo-accent);
+}
+
+.get {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 5rem 0;
+}
+
+.get i {
+    font-size: .5rem;
+    transform: translateY(-.3rem);
+
+}
+
+#get_started .btn>a {
+    background-color: var(--respo-light);
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    color: var(--respo-primary);
+    padding: 2rem 4.5rem;
+    border-radius: 60px;
+}
+
+.get a {
+    color: var(--respo-light);
+}
+
+
+
+/* #endregion get started */
 
 
 @media screen and (min-width:768px) {
